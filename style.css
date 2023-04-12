@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	text-transform: capitalize;
+	font-style: normal;
+}
+
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 5em;
+}
+
+section {
+	position: relative;
+	padding: 100px;
+/*	min-height: 100vh;*/
+}
+.topSection {
+	position: relative;
+	padding: 0;
+	height: 90vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.topSection .header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100000;
+}
+.topSection .header .logo{
+	font-size: 1.8em;
+	color: #fff;
+	font-weight: 600;
+}
+.topSection .header .icons{
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.topSection .header .icons div{
+	position: relative;
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+	background-color: #eee;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.1em;
+	cursor: pointer;
+}
+.topSection .header .icons div i{
+	transition: .2s;
+}
+.topSection .header .icons div:hover i{
+	color:#28f3d4;
+}
+.topSection .header .icons div.space{
+	margin-left: .5em;
+}
+
+.topSection .header .logo span{
+	color: #28f3d4;
+}
+.topSection .top{
+	position: relative;
+	padding-left: 100px;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	width: 100%;
+	height: 100%;
+	background: #155785;
+	padding-right: 1em;
+}
+.topSection .top h1{
+	font-size: 2em;
+	font-weight: 700;
+	color: #fff;
+}
+.topSection .top p{
+	font-size: 1em;
+	line-height: 1.8;
+	padding: 1em 0;
+	color: #fff;
+}
+.topSection .top .buttons{
+	display: flex;
+	align-items: center;
+}
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background: #333;
+	font-size: 1em;
+	cursor: pointer;
+	font-weight: 400;
+	color: #fff;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+	transition: .5s;
+}
+.btn:hover {
+	letter-spacing: .8px;
+}
+.btn.sci {
+	background: #28f3d4;
+	margin-right: 20px;
+}
+.bgBx {
+	background: url(ld0.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.about {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about .row1{
+	position: relative;
+	width: 500px;
+	min-height: 430px;
+	margin-right: 2em;
+}
+
+.about .row1 img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.about .row2{
+	position: relative;
+	max-width: 400px;
+}
+
+.about .row2{
+	position: relative;
+	max-width: 400px;
+}
+.about .row2 span{
+	position: relative;
+	font-size: 1em;
+	color: #111;
+}
+.about .row2 h1{
+	position: relative;
+	font-size: 2em;
+	padding: 7px 0;
+}
+.about .row2 p{
+	position: relative;
+	font-size: 1em;
+	line-height: 1.5;
+	text-transform: initial;
+}
+.about .row2 .btn{
+	position: relative;
+	margin-top: .5em;
+}
+.products{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+}
+.products div{
+	width: 100%;
+	text-align: center;
+	margin-top: 1em;
+}
+.services .haut h1,
+.footer h1,
+.products h1 {
+	position: relative;
+	font-size: 2em;
+	color: #111;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	font-weight: 700;
+	margin-bottom: 1.5em;
+	padding-left: 15px;
+}
+.services .haut h1::before,
+.footer h1::before,
+.products h1::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		height: 80%;
+		width: 7px;
+		background: #28f3d4;
+}
+.products .all-products {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1em;
+}
+.products .all-products .product {
+	position: relative;
+	overflow: hidden;
+}
+.products .all-products .product .imgBx{
+	position: relative;
+	width: 20em;
+	height: 15em;
+} 
+.products .all-products .product .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+} 
+.products .all-products .product p{
+	color: #111;
+	font-size: 1em;
+	padding: 5px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.products .all-products .product p span{
+	padding-right: 10px;
+} 
+
+.products .all-products .product p span::before{
+	content: '$';
+} 
+
+.services {
+	min-height: 100vh;
+}
+
+.services .haut {
+	padding: 20px 20px 150px;
+	background: #155785;
+	display: flex;
+	justify-content: space-between;
+}
+.services .haut h1{
+	margin-bottom: 0;
+	height: max-content;
+}
+.services .haut p{
+	max-width: 550px;
+}
+.services .container{
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1em;
+	padding: 20px;
+	margin-top: -150px;
+}
+.services .container .content{
+	position: relative;
+	background: #fff;
+	padding: 30px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.services .container .content img{
+	width: 3.5em;
+	padding-bottom: 10px;
+}
+.services .container .content h2{
+	padding-bottom: 10px;
+	font-size: 1.3em;
+	color: #111;
+}
+.services .container .content p{
+	font-size: .8em;
+	color: #111;
+	text-align: center;
+	line-height: 1.8;
+}
+
+.footer {
+	min-height: 20vh;
+	padding: 50px 100px;
+}
+
+.footer .foot{
+	position: relative;
+	display: grid;
+	grid-template-columns: 25% 25% 35% 15%;
+	grid-gap: 1em;
+	align-items: flex-end;
+	overflow: hidden;
+}
+
+.footer .foot h4{
+	position: relative;
+	font-size: .9em;
+	color:  #111;
+}
+.footer .foot .inputBx{
+	position: relative;
+	width: 100%;
+	height: 2em;
+	background: #ccc;
+}
+.footer .foot .inputBx input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	padding: 10px;
+	color: #444;
+	font-size: .8em;
+}
+.footer .foot .inputBx input::placeholder {
+	font-size: .8em;
+	color: #444;
+}
+.footer .foot .btn {
+	font-size: .7em;
+	padding: 6px 10px;
+}
+.footer1 {
+	background: #eee;
+	padding: 20px 100px;
+}
+.footer1 .navigation {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.footer1 .navigation ul{
+	position: relative;
+	justify-content: center;
+	display: flex;
+	list-style: none;
+	flex-flow: wrap;
+}
+.footer1 .navigation ul li{
+	position: relative;
+	margin: 20px;
+	display: flex;
+}
+.footer1 .navigation ul li a{
+	text-transform: uppercase;
+}
+
+
+@media (max-width: 991px) {
+
+	.topSection .top {
+		padding-left: 40px;
+	}
+	section {
+		padding: 100px 40px;
+	}
+	.services .haut p {
+    	max-width: 400px;
+}
+	.services .haut h1, .footer h1, .products h1 {
+		font-size: 1.5em;
+	}
+	.topSection .header {
+		padding: 15px 40px;
+	}
+	.footer {
+	    padding: 50px 40px;
+}
+	.footer1 {
+		padding: 20px 40px;
+	}
+	.footer .foot {
+	    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media (max-width: 768px) {
+
+	.topSection .top {
+		padding-left: 20px;
+	}
+	section {
+		padding: 100px 20px;
+	}
+	.topSection .header {
+		padding: 15px 20px;
+	}	
+	.footer {
+	    padding:50px 20px;
+}
+	.footer1 {
+		padding: 20px;
+}
+	.footer .foot {
+	    grid-template-columns: 1fr;
+	}
+	.about {
+	    flex-flow: column-reverse;
+}
+	.about .row1 {
+	    width: 100%;
+	    margin-right: 0; 
+	    margin-top: 1em;
+	}
+	.about .row2 {
+	    max-width: 100%;
+}
+	.products .all-products {
+	    grid-template-columns: repeat(2, 1fr);	
+	}
+	.services .container {
+	    grid-template-columns: repeat(2, 1fr);
+}
+	.topSection .header .logo {
+	    font-size: 1.4em;
+	}
+
+	.topSection .top h1 {
+	    font-size: 1.6em;
+}
+	.btn {
+	    font-size: .8em;
+	}
+	.about .row2 h1 {
+   		font-size: 1.6em;
+}
+}
+
+@media (max-width: 650px) {
+
+	.topSection {
+	    grid-template-columns: 1fr;
+	}
+	.topSection {
+	    height: 100vh;
+	}
+	.services .haut {
+	    flex-flow: column;
+	}
+	.services .haut p {
+	    margin-top: 1em;
+	    max-width: 100%;
+	}
+}
+
+@media (max-width: 550px) {
+    html {
+    	scroll-padding-top: 0;
+    }
+	.products .all-products {
+	    grid-template-columns: 1fr;
+	       grid-gap: .2em;	
+	}
+	.services .container {
+	    grid-template-columns: 1fr;
+}
+	.products .all-products .product .imgBx {
+	    width: 100%;
+	    height: 12em;
+}
+	
+	.about .row1 {
+	    min-height: 340px;
+	}
+	p,
+	.about .row2 p,
+	.topSection .top p {
+  	  font-size: .8em;
+}
+
+}
